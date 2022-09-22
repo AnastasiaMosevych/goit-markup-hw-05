@@ -597,7 +597,7 @@ img {
 
 .projects .link:hover .overlay-text {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -617,7 +617,7 @@ img {
 .projects .link:hover .project-image::before,
 .projects .link:focus .project-image::before {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
