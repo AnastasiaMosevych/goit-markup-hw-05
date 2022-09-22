@@ -66,10 +66,9 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="btn">Замовити послугу</button>
-            </div>      
-        </section>
-        
+                <button data-modal-open type="button" class="btn">Замовити послугу</button>
+            </div>     
+        </section>     
 
         <!--Наші переваги-->
 
@@ -125,12 +124,22 @@
                 <ul class="img list">
                     <li class="item">
                         <img src="./img/working-on-computer.jpg" alt="робота за компютером" width="370">
+                        <div class="item-title">
+                            <p class="item-text">Десктопні додатки</p>
+                        </div>
+                        
                     </li>
                     <li class="item">
                         <img src="./img/phone-user-interface.jpg" alt="інтерфейси на телефоні" width="370">
+                        <div class="item-title">
+                            <p class="item-text">Мобільні додатки</p>
+                        </div>
                     </li>
                     <li class="item">
                         <img src="./img/working-on-ipad.jpg" alt="робота за планшетом" width="370">
+                        <div class="item-title">
+                            <p class="item-text">Дизайнерські рішення</p>
+                        </div>
                     </li>
                 </ul>
             </div> 
@@ -435,5 +444,16 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="backdrop-btn" data-modal-close>
+                <svg class="backdrop-svg" width="11" height="11">
+                    <use href="./img/icons.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+    
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
